@@ -10,11 +10,11 @@ int main() {
   SetLogLevel(DEBUG);
   Debug("Enemy at index: %i", 3);
   Log("Hello!");
-  Warning("Your computer sucks.");
+  Warn("There is an impostor among us.");
   SetLogLevel(LOG);
   Log("Level: error.");
   SetLogLevel(ERROR);
-  Warning("You have something on your shirt.");
+  Warn("You have something on your shirt.");
   Error("Your computer has virus!");
   return 0;
 }

@@ -10,11 +10,17 @@ generate:
 	@echo "Done."
 
 test:
-	$(CC) -L . -l$(TITLE) example.c -o $(TITLE)
+	$(CC) example.c -L . -l$(TITLE) -o $(TITLE)
 
 install:
 	@make generate
 	@echo "Installing."	
-	@sudo cp src/$(TITLE).h $(DIR)/include/
-	@sudo cp lib$(TITLE).so $(DIR)/lib/
+	@cp src/$(TITLE).h $(DIR)/include/
+	@cp lib$(TITLE).so $(DIR)/lib/
+	@echo "Done!"
+
+uninstall:
+	@echo "Removing loggr..."
+	@rm -rf $(DIR)/lib/lib$(TITLE).so
+	@rm -rf $(DIR)/lib/$(TITLE).h
 	@echo "Done."
