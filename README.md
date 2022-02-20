@@ -2,7 +2,7 @@
 
 > by smv
 
-Extra layer on top of printf to make logging easier!
+Extra layer on top of printf to make logging easier!  
 With loggr you can set logging levels to make things easier.
 
 ## Contents.
@@ -12,13 +12,13 @@ With loggr you can set logging levels to make things easier.
 - [Help me.](#help-me)
 
 ## Installation.
-Install on Linux by running:
-`sudo make install` or
-`make install DIR=/path/to/directory`
+Install on Linux by running:  
+`sudo make install` or  
+`make install DIR=/path/to/directory`  
 For any other OS just generate files with `make install DIR=/path/to/directory` and place `libloggr.so` and `loggr.h` in your working director.
 
 ### Compile commands.
-`gcc main.c -lloggr -o main`
+`gcc main.c -lloggr -o main`  
 or maybe `gcc main.c -L /path/to/library -lloggr -o main`
 
 ## Usage.
