@@ -15,7 +15,7 @@ With loggr you can set logging levels to make things easier.
 Install on Linux by running:  
 `sudo make install` or  
 `make install DIR=/path/to/directory`  
-For any other OS just generate files with `make install DIR=/path/to/directory` and place `libloggr.so` and `loggr.h` in your working director.
+For any other OS just generate files with `make install DIR=/path/to/directory` and place `libloggr.so` and `loggr.h` in your working directory.
 
 ### Compile commands.
 `gcc main.c -lloggr -o main`  
