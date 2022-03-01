@@ -11,12 +11,12 @@ void SetColors(int);
 // set labels for level of logging
 void SetLabels(int);
 // send a debug message
-void Debug(char*, ...);
+void Debug(const char*, ...);
 // send a normal log
-void Log(char*, ...);
+void Log(const char*, ...);
 // send a warning
-void Warn(char*, ...);
+void Warn(const char*, ...);
 // send an error
-void Error(char*, ...);
+void Error(const char*, ...);
 
 #endif
